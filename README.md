@@ -1,5 +1,15 @@
 # codecept-tests
-Install:
+
+Демо по фреймворку CodeceptJS+WebdriverIO+WebdriverCSS
+
+## Устанвка
+1. Скачиваем репозиторий
+2. Устанавливаем компоненты
+```
 npm i codeceptjs@0.2.8
 npm i webdriverio@3.4.0
 npm install git://github.com/webdriverio/webdrivercss.git#v2.0.0beta-rc1
+```
+Перед установкой webdriverCSS необходимо поставить GraphicsMagick. Подробнее [здесь](https://github.com/webdriverio/webdrivercss#install)
+
+После настройки можно проверить запуск тестов  помощью команды `npm run codeceptjs`
