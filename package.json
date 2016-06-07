@@ -1,7 +1,6 @@
 {
   "name": "4game-tests",
-  "version": "1.2.72",
-  "description": "4game web-components repository",
+  "description": "4game tests powered by CodeceptJS",
   "scripts": {
     "codeceptjs": "codeceptjs run tests --steps"
   },
