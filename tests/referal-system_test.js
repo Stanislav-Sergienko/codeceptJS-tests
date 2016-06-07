@@ -1,9 +1,9 @@
 
-Feature('4gamer');
+Feature('4game-referral');
 
-Scenario('test opening page', (I) => {
+Scenario('Незалогиненный пользователь заходит на страницу реферальной системы', (I) => {
 	I.clearCookie();
 	I.amOnPage('/summon/');
-	I.checkLayout();
-
+	I.see("Войди в свой аккаунт")
+	I.checkLayout('body', [ {name: 'body', elem: 'body'} ], 0.05, 'tests');
 });

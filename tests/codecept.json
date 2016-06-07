@@ -7,10 +7,7 @@
       "url": "https://ru.4game.com",
       "browser": "chrome",
       "windowSize": "1360x840",
-      "port": "3244",
-      "browserstack.debug": "true",
-      "browserstack.local": "true",
-      "browserName": "chrome"
+      "port": "3244"
     },
     "WebdriverCSS": {
       "require": "./webdrivercss_helper.js"

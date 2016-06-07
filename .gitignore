@@ -26,6 +26,10 @@ build/Release
 # Dependency directory
 node_modules
 
+# Report folders
+tests/output
+tests/visual/failed
+
 # Optional npm cache directory
 .npm
 
