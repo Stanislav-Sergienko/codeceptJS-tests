@@ -6,16 +6,15 @@
     "WebDriverIO": {
       "url": "https://ru.4game.com",
       "browser": "chrome",
-      "windowSize": "640x480",
+      "windowSize": "1360x768",
       "port": "3244"
     },
-    "Galen": {
-      "require": "./galen_helper.js"
+    "WebdriverCSS": {
+      "require": "./webdrivercss_helper.js"
     }
   },
   "include": {
-    "I": "./steps_file.js",
-    "Galen": "./galen_helper.js"
+    "I": "./steps_file.js"
   },
   "bootstrap": false,
   "mocha": {},

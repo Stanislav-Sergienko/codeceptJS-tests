@@ -1,9 +1,10 @@
 
-Feature('Referal system');
+Feature('4gamer');
 
-Scenario('test something', (I) => {
+Scenario('test opening page', (I) => {
 	I.clearCookie();
-	I.amOnPage('/articles/');
-	Galen.checkHTML('./specs/header.gspec');
+	I.amOnPage('/summon/');
+	WebdriverCSS.checkLayout();
+	I.see('Войди в свой аккаунт');
 
 });
