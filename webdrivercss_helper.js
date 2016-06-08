@@ -12,6 +12,7 @@ var config = {
     'screenWidth': [1024]
   }
 };
+var browser;
 
 class WebdriverCSS extends Helper {
   //перед тестом проверяем размер вьюпорта и корректируем данные webdrivercss
@@ -21,6 +22,9 @@ class WebdriverCSS extends Helper {
         size = Math.ceil(size / 10) * 10;
         config.webdrivercss.screenWidth[0] = parseFloat(size); // outputs: {width: 1024, height: 768}
     })
+    // Определяем браузер в котором запущен тест
+    browser = client.desiredCapabilities.browserName;
+    if (browser == 'internet explorer') { browser = 'ie'}
   }
 
   //Метод для проверки Layout с помощью фреймворка WebdriverCSS
@@ -38,7 +42,8 @@ class WebdriverCSS extends Helper {
     config.webdrivercss.misMatchTolerance = misMatchTolerance;
     config.webdrivercss.screenshotRoot = screenshootPath + '/visual/reference';
     config.webdrivercss.failedComparisonsRoot = screenshootPath + '/visual/failed';
-
+    //делаем маску скриншота
+    var uniqueId = browser + '_' + id;
     //логирование конфига
     //console.log(config);
     //логирование вебдрайвера
@@ -47,7 +52,7 @@ class WebdriverCSS extends Helper {
     //инициализируем фреймворк webdrivercss
     //возвращаем в основной тест результаты проверки фреймворком webdrivercss
     webdrivercss.init(client, config.webdrivercss);
-        return client.webdrivercss(id, options, function(err,res) {
+        return client.webdrivercss(uniqueId, options, function(err,res) {
           //Логирование ошибок и результата
           //console.log(err);
           //console.log(res);
