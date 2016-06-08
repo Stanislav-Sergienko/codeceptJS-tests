@@ -9,11 +9,10 @@ var config = {
     'screenshotRoot': 'tests/visual/reference',
     'failedComparisonsRoot': 'tests/visual/failed',
     'misMatchTolerance': 0.05,
-    'screenWidth': []
+    'screenWidth': [1024]
   }
 };
 var browser;
-var screenWidth;
 
 class WebdriverCSS extends Helper {
   //перед тестом проверяем размер вьюпорта и корректируем данные webdrivercss
@@ -21,7 +20,7 @@ class WebdriverCSS extends Helper {
     let client = this.helpers['WebDriverIO'].browser;
     client.getViewportSize('width').then(function(size) {
         size = Math.ceil(size / 10) * 10;
-        screenWidth = size; // outputs: {width: 1024, height: 768}
+        config.webdrivercss.screenWidth[0] = parseFloat(size); // outputs: {width: 1024, height: 768}
     })
     // Определяем браузер в котором запущен тест
     browser = client.desiredCapabilities.browserName;
@@ -44,7 +43,7 @@ class WebdriverCSS extends Helper {
     config.webdrivercss.screenshotRoot = screenshootPath + '/visual/reference';
     config.webdrivercss.failedComparisonsRoot = screenshootPath + '/visual/failed';
     //делаем маску скриншота
-    var uniqueId = browser + '_' + id + '_' + screenWidth + 'px';
+    var uniqueId = browser + '_' + id;
     //логирование конфига
     //console.log(config);
     //логирование вебдрайвера
