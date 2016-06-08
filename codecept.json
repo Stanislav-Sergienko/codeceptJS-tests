@@ -1,0 +1,22 @@
+{
+  "tests": "./tests/*_test.js",
+  "timeout": 10000,
+  "output": "./output",
+  "helpers": {
+    "WebDriverIO": {
+      "url": "https://ru.4game.com",
+      "browser": "chrome",
+      "window_size": "1360x840",
+      "port": "3244"
+    },
+    "WebdriverCSS": {
+      "require": "./webdrivercss_helper.js"
+    }
+  },
+  "include": {
+    "I": "./steps_file.js"
+  },
+  "bootstrap": false,
+  "mocha": {},
+  "name": "tests"
+}

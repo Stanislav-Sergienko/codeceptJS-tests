@@ -1,0 +1,12 @@
+{
+  "name": "4game-tests",
+  "description": "4game tests powered by CodeceptJS",
+  "scripts": {
+    "codeceptjs": "codeceptjs run --steps"
+  },
+  "devDependencies": {
+    "webdriverio": "3.4.0",
+    "codeceptjs": "0.2.8",
+    "webdrivercss": "git://github.com/webdriverio/webdrivercss.git#v2.0.0beta-rc1"
+    }
+}
