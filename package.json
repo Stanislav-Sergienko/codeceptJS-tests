@@ -2,7 +2,7 @@
   "name": "4game-tests",
   "description": "4game tests powered by CodeceptJS",
   "scripts": {
-    "codeceptjs": "codeceptjs run tests --steps"
+    "codeceptjs": "codeceptjs run --steps"
   },
   "devDependencies": {
     "webdriverio": "3.4.0",
