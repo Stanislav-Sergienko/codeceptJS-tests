@@ -15,9 +15,10 @@ var config = {
 
 class WebdriverCSS extends Helper {
   //перед тестом проверяем размер вьюпорта и корректируем данные webdrivercss
-  _before() {
+  _afterStep() {
     let client = this.helpers['WebDriverIO'].browser;
     client.getViewportSize('width').then(function(size) {
+        size = Math.ceil(size / 10) * 10;
         config.webdrivercss.screenWidth[0] = parseFloat(size); // outputs: {width: 1024, height: 768}
     })
   }
