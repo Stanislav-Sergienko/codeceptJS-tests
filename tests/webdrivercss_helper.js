@@ -4,7 +4,7 @@ let Helper = codecept_helper;
 let assert = require('assert');
 let webdrivercss = require('webdrivercss');
 
-var options = {
+var config = {
   webdrivercss: {
     'screenshotRoot': 'tests/visual/reference',
     'failedComparisonsRoot': 'tests/visual/failed',
@@ -22,20 +22,23 @@ class WebdriverCSS extends Helper {
   checkLayout(id, options, misMatchTolerance, screenshootPath) {
     //получаем информацию о webdriver
     let client = this.helpers['WebDriverIO'].browser;
-    console.log('ниже ширина вьюпорта');
-//TODO: доделать обработку параметров
-//    client.getViewportSize('width').then(function(size) {
-//        options.webdrivercss.screenWidth = size;
-//    })
-//    console.log(options.webdrivercss.screenWidth);
-//    options.webdrivercss.screenWidth = client.getViewportSize(width);
-//    options.webdrivercss.misMatchTolerance = misMatchTolerance;
-//    options.webdrivercss.screenshotRoot = screenshootPath + '/visual/reference';
-//    oprions.webdrivercss.failedComparisonsRoot = screenshootPath + '/visual/reference';
+//    console.log(config);
+//    console.log('ниже ширина вьюпорта');
+//TODO: доделать обработку параметров (остался размер окна)
+//    client.getViewportSize('width').then(config.webdrivercss.screenWidth[0] = size);
+//    console.log(size);
+//    config.webdrivercss.screenWidth[0] = parseFloat(client.getViewportSize('width'));
+//    console.log(config);
+//    options[webdrivercss.screenWidth] = client.getViewportSize(width);
+    config.webdrivercss.misMatchTolerance = misMatchTolerance;
+    config.webdrivercss.screenshotRoot = screenshootPath + '/visual/reference';
+    config.webdrivercss.failedComparisonsRoot = screenshootPath + '/visual/failed';
+//    console.log(config);
     //логирование вебдрайвера
     //console.log(client);
     //инициализируем фреймворк webdrivercss
-    webdrivercss.init(client, options.webdrivercss);
+    webdrivercss.init(client, config.webdrivercss);
+    console.log('Я уже здесь');
     //возвращаем в основной тест результаты проверки фреймворком webdrivercss
     return client
     .webdrivercss(id, options, function(err,res) {
@@ -49,7 +52,10 @@ class WebdriverCSS extends Helper {
         return;
       }
       else {
-        assert.ok(res.body[0].isWithinMisMatchTolerance, res);
+        //отправляем результат проверки
+        //т.к. не знаем, какое название у объекта, берем самый первый
+        var resPrepare = res[Object.keys(res)[0]];
+        assert.ok(resPrepare[0].isWithinMisMatchTolerance, "misMatchPercentage = " + resPrepare[0].misMatchPercentage);
         return;
       }
     })

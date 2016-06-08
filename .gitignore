@@ -29,6 +29,7 @@ node_modules
 # Report folders
 tests/output
 tests/visual/failed
+webdrivercss
 
 # Optional npm cache directory
 .npm
