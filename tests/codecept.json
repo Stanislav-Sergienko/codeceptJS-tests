@@ -6,7 +6,7 @@
     "WebDriverIO": {
       "url": "https://ru.4game.com",
       "browser": "chrome",
-      "windowSize": "1360x840",
+      "window_size": "1360x840",
       "port": "3244"
     },
     "WebdriverCSS": {
