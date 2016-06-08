@@ -4,7 +4,7 @@
   "output": "./output",
   "helpers": {
     "WebDriverIO": {
-      "url": "https://ru.4game.com",
+      "url": "https://bugsnag-update-ru.4gametest.com/",
       "browser": "chrome",
       "window_size": "1360x840",
       "port": "3244"

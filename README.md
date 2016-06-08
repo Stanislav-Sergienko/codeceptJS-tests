@@ -12,4 +12,12 @@ npm install git://github.com/webdriverio/webdrivercss.git#v2.0.0beta-rc1
 ```
 Перед установкой webdriverCSS необходимо поставить GraphicsMagick. Подробнее [здесь](https://github.com/webdriverio/webdrivercss#install)
 
+Запускаем Java Webdriver (информация находиться в ./selenium/launchinfo)
+
+В codecept указываем настройки вебрайвера:
+* Браузер
+* Разрешение
+
+Внимание: для IE необходимо отключить безопасный режим
+
 После настройки можно проверить запуск тестов  помощью команды `npm run codeceptjs`
