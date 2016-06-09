@@ -1,0 +1,106 @@
+{
+    "TWWarhammer": {
+      "name": "Total War: Warhammer",
+      "platform": "Steam",
+      "url": "/total-war-warhammer",
+      "serviceId": "31-total-war-warhammer",
+      "title": "Купить Total War: WARHAMMER для Steam",
+      "description": "Увеличивай свою скидку на игры для Steam и Uplay с каждой новой покупкой в Фогейме и получай подарки в любимых MMO-играх: Lineage 2, Aion, Point Blank.",
+      "ogdescription": "Введи кодовое слово Chaos и купи Total War: Warhammer дешевле, чем в Steam. Увеличивай свою скидку на игры для Steam и Uplay с каждой новой покупкой в Фогейме и получай подарки в любимых MMO-играх: Lineage 2, Aion, Point Blank.",
+      "status": "preorder",
+      "editions": {
+        "standard":{
+          "name": "Standard Edition",
+          "gold": false,
+          "price": {
+              "full": 1799,
+              "discount": 1749,
+              "bonus": 150
+            }
+        }
+      },
+      "codes": ["lepra", 
+          "лепра", 
+          "leprosorium",
+          "игромания",
+          "igromania",
+          "фогеймер",
+          "4gamer",
+          "хаос",
+          "chaos"]
+    },
+    "FarCryPrimal": {
+      "name": "Far Cry Primal",
+      "platform": "Uplay",
+      "url": "/far-cry-primal",
+      "serviceId": "31-far-cry-primal",
+      "title": "Купить Far Cry Primal для Uplay",
+      "description": "Увеличивай свою скидку на игры для Steam и Uplay с каждой новой покупкой в Фогейме и получай подарки в любимых MMO-играх: Lineage 2, Aion, Point Blank.",
+      "ogdescription": "Введи кодовое слово охотник и купи Far Cry Primal дешевле, чем в Uplay. Увеличивай свою скидку на игры для Steam и Uplay с каждой новой покупкой в Фогейме и получай подарки в любимых MMO-играх: Lineage 2, Aion, Point Blank.",
+      "status": "new",
+      "editions": {
+        "standard": {
+          "name": "Standard Edition",
+          "id": "far-cry-primal-standard",
+          "gold": false,
+          "order": 1,
+          "price": {
+              "full": 1999,
+              "discount": 1799,
+              "bonus": 200
+            }
+        },
+        "apex": {
+          "name": "Apex Edition",
+          "id": "far-cry-primal-apex",
+          "gold": 1,
+          "order": 2,
+          "price": {
+            "full": 2299,
+            "discount": 2099,
+            "bonus": 200
+          }
+        }
+      },
+      "codes": ["lepra", 
+          "лепра", 
+          "leprosorium",
+          "игромания",
+          "igromania",
+          "фогеймер",
+          "4gamer",
+          "hunter",
+          "охотник"]
+    },
+    "Doom": {
+      "name": "Doom",
+      "platform": "Steam",
+      "url": "/doom",
+      "serviceId": "31-doom",
+      "title": "Купить DOOM для Steam",
+      "description": "Увеличивай свою скидку на игры для Steam и Uplay с каждой новой покупкой в Фогейме и получай подарки в любимых MMO-играх: Lineage 2, Aion, Point Blank.",
+      "ogdescription": "Введи кодовое слово cacodemon и купи Doom дешевле, чем в Steam. Увеличивай свою скидку на игры для Steam и Uplay с каждой новой покупкой в Фогейме и получай подарки в любимых MMO-играх: Lineage 2, Aion, Point Blank.",
+      "status": "preorder",
+      "editions": {
+        "standard": {
+          "name": "Standard Edition",
+          "id": "doom",
+          "gold": false,
+          "price": {
+              "full": 1999,
+              "discount": 1849,
+              "bonus": 150
+            }
+        }
+      },
+      "codes": ["lepra", 
+          "лепра", 
+          "leprosorium",
+          "игромания",
+          "igromania",
+          "фогеймер",
+          "4gamer",
+          "Какодемон",
+          "cacodemon"]
+    }
+  }

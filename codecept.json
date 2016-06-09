@@ -4,17 +4,23 @@
   "output": "./output",
   "helpers": {
     "WebDriverIO": {
-      "url": "https://bugsnag-update-ru.4gametest.com/",
-      "browser": "firefox",
+      "url": "https://bugsnag-update-ru.4gametest.com",
+      "browser": "chrome",
       "window_size": "1360x840",
       "port": "3244"
     },
     "WebdriverCSS": {
       "require": "./helpers/webdrivercss_helper.js"
+    },
+    "ForGame": {
+      "require": "./helpers/forgame_helper.js"
     }
   },
   "include": {
-    "I": "./steps_file.js"
+    "I": "./steps_file.js",
+    "genericPage": "./pages/generic.js",
+    "playPage": "./pages/play.js",
+    "spgPage": "./pages/spg.js"
   },
   "bootstrap": false,
   "mocha": {},

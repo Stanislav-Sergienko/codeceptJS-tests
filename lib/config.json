@@ -1,0 +1,8 @@
+{
+	"notify": {
+		"slack_webhook": "https://hooks.slack.com/services/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",
+		"fail": {
+			"slack": true
+		}
+	}
+}

@@ -4,9 +4,10 @@
   "scripts": {
     "codeceptjs": "codeceptjs run --steps"
   },
-  "devDependencies": {
+  "dependencies": {
     "webdriverio": "3.4.0",
     "codeceptjs": "0.2.8",
-    "webdrivercss": "git://github.com/webdriverio/webdrivercss.git#v2.0.0beta-rc1"
+    "webdrivercss": "git://github.com/webdriverio/webdrivercss.git#v2.0.0beta-rc1",
+    "sync-request": "^3.0.0"
     }
 }

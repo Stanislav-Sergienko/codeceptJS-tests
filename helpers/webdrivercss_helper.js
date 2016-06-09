@@ -40,8 +40,8 @@ class WebdriverCSS extends Helper {
 
     //обновляем информацию для фреймворка webdrivercss
     config.webdrivercss.misMatchTolerance = misMatchTolerance;
-    config.webdrivercss.screenshotRoot = screenshootPath + '/visual/reference';
-    config.webdrivercss.failedComparisonsRoot = screenshootPath + '/visual/failed';
+    config.webdrivercss.screenshotRoot = 'tests/' + screenshootPath + '/visual/reference';
+    config.webdrivercss.failedComparisonsRoot = 'tests/' + screenshootPath + '/visual/failed';
     //делаем маску скриншота
     var uniqueId = browser + '_' + id;
     //логирование конфига
