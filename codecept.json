@@ -1,5 +1,5 @@
 {
-  "tests": "./tests/*_test.js",
+  "tests": "./tests/*/*_test.js",
   "timeout": 10000,
   "output": "./output",
   "helpers": {
@@ -10,7 +10,7 @@
       "port": "3244"
     },
     "WebdriverCSS": {
-      "require": "./webdrivercss_helper.js"
+      "require": "./helpers/webdrivercss_helper.js"
     }
   },
   "include": {

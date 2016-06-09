@@ -5,5 +5,5 @@ Scenario('Незалогиненный пользователь заходит �
 	I.clearCookie();
 	I.amOnPage('/summon/');
 	I.see("Войди в свой аккаунт")
-	I.checkLayout('referrer_unauth', [ {name: 'body', elem: 'body'} ], 0.05, 'tests');
+	I.checkLayout('referrer_unauth', [ {name: 'body', elem: 'body'} ], 0.5, 'tests/4game-referral-system');
 });
