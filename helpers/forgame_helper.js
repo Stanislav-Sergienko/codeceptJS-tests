@@ -51,7 +51,7 @@ class ForGame extends Helper {
       bonus: bonus,
       characterName: ''
     });
-    let rg = new RegExp(/User created: ([0-9]*)/);
+    let rg = new RegExp(/User created: userId = ([0-9]*)/);
     let r = request('GET', base + params);
     let result = r.body.toString();
     if(result.indexOf('User created') == -1){
